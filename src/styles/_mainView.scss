@@ -1,0 +1,80 @@
+.CreateNewShipmentBtn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: $TertiaryColor;
+    width: 300px;
+    color: white;
+    height: 40px;
+    padding-top: 10px;
+    transition: .5s;
+    &:hover {
+        cursor: pointer;
+        background-color: $TertiaryHover;
+    }
+}
+
+.ordersContainer {
+    background-color: white;
+    margin: 150px 20px 0 250px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ordersContainerHeader {
+    background-color: $PrimaryColor;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 40px;
+    width: 94%;
+    position: absolute;
+    margin-top: -60px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 2%;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.orderItems {
+    display: grid;
+    grid-template-columns: 20% 15% 20% 20%;
+    column-gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: solid 2px $SecondaryColor;
+    text-align: left;
+}
+
+.currentOrderItems {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 10%;
+    column-gap: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: solid 2px $SecondaryColor;
+    text-align: left;
+}
+
+.orderHighlight {
+    background-color: $TertiaryColor;
+    text-align: center;
+    color: white;
+    width: 80%;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-top: 1px;
+}
+
+.orderColor {
+    width: 80%;
+    height: 20px;
+    background-color: lightgray;
+    margin-top: 15px;
+    border-radius: 10px;
+}

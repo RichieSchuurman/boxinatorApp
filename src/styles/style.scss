@@ -1,0 +1,23 @@
+@import "./variables";
+@import "./sideBar";
+@import "./mainView";
+@import "./newShipment";
+@import "./loginView";
+
+#app {
+    padding: 0;
+    margin: 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+.header {
+    float: left;
+    margin-left: 250px;
+}

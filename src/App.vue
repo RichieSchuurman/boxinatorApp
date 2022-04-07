@@ -1,32 +1,19 @@
+<script>
+import { defineComponent } from "vue";
+import SideBar from "./components/side-bar.vue"
+export default defineComponent({ components: { SideBar } });
+</script>
 <template>
-  <nav>
-    <router-link to="/">Login</router-link> |
-    <router-link to="/register">Register</router-link> |
-    <router-link to="/main">Main</router-link> | 
-    <router-link to="/profile">Profile</router-link>
-  </nav>
+
+<n-loading-bar-provider>
+  <n-message-provider>
+    <n-notification-provider>
+      <n-dialog-provider>
+        <SideBar />
+      </n-dialog-provider>
+    </n-notification-provider>
+  </n-message-provider>
+</n-loading-bar-provider>
+
   <router-view />
 </template>
-
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>

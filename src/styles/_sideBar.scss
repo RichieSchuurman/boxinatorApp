@@ -1,0 +1,50 @@
+.sidebar {
+    background-color: $PrimaryColor;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    transition: .5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-weight: bold;
+}
+
+.sidebarHeader {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    border-bottom: solid 5px white;
+    & img {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}
+
+.navBtn {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    transition: .5s;
+    background-color: $SecondaryColor;
+    &:hover {
+        background-color: $TertiaryHover;
+    }
+}
+
+.router-link-exact-active {
+    background-color: $TertiaryColor;
+    &:hover {
+        background-color: $TertiaryHover;
+    }
+}
