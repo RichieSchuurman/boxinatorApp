@@ -1,0 +1,34 @@
+.profileViewHeader {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.profileContainer {
+    background-color: white;
+    margin: 100px 20px 0 250px;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+
+.inputItems3 {
+    display: grid;
+    grid-template-columns: 30% 30% 28%;
+    column-gap: 5%;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+#updateProfile {
+    border-radius: 20px;
+    background-color: $TertiaryColor;
+    width: 20%;
+    margin-left: 10%;
+    color: white;
+    height: 40px;
+    padding-top: 20px;
+    transition: .5s;
+    &:hover {
+        cursor: pointer;
+        background-color: $TertiaryHover;
+    }
+}

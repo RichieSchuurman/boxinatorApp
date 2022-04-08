@@ -6,26 +6,26 @@ export default {props: {}, setup() {}}
     <!-- <div class="blurBackground" /> -->
 
     <div class="newShipmentContainer">
-        <p class="closeBtn">X</p>
+        <h2 class="closeBtn">X</h2>
         <h3>Create a new shipment</h3>
-        <div class="newShipmentItem">
-            <p>Reciever name</p>
+        <div class="inputItem">
+            <h4>Reciever name</h4>
             <input placeholder="Reciever name">
         </div>
-        <div class="newShipmentItems">
-            <div class="newShipmentItem">
-                <p>Weight option</p>
+        <div class="inputItems">
+            <div class="inputItem">
+                <h4>Weight option</h4>
                 <input placeholder="Select package weight">
             </div>
-            <div class="newShipmentItem">
-                <p>Box color</p>
+            <div class="inputItem">
+                <h4>Box color</h4>
                 <div>{color slider}</div>
             </div>
         </div>
-        <div class="newShipmentItem">
-            <p>Destination country</p>
+        <div class="inputItem">
+            <h4>Destination country</h4>
             <input placeholder="Reciever name">
         </div>
-        <p class="CreateShipmentBtn">Create shipment</p>
+        <p class="button">Create shipment</p>
     </div>
 </template>

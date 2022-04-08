@@ -61,23 +61,12 @@
   background-color: #1d8b73;
 }
 
-.CreateNewShipmentBtn {
+#createNewShipment {
   float: right;
-  margin-top: 10px;
+  margin-top: -50px;
   margin-right: 20px;
-  border-radius: 20px;
-  background-color: #26b99a;
   width: 300px;
-  color: white;
-  height: 40px;
   padding-top: 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.CreateNewShipmentBtn:hover {
-  cursor: pointer;
-  background-color: #1d8b73;
 }
 
 .ordersContainer {
@@ -178,7 +167,7 @@
 .newShipmentContainer {
   position: fixed;
   z-index: 3;
-  min-height: 450px;
+  min-height: 500px;
   background-color: white;
   width: 50%;
   border-radius: 10px;
@@ -193,10 +182,74 @@
           box-shadow: 0px 0px 10px #000000;
 }
 
-.CreateShipmentBtn {
+.loginView {
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 200px;
+}
+
+.loginHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginHeader img {
+  height: 100px;
+}
+
+.registerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.registerText p:last-of-type {
+  color: #26b99a;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.registerText p:last-of-type:hover {
+  color: #1d8b73;
+}
+
+.profileViewHeader {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.profileContainer {
+  background-color: white;
+  margin: 100px 20px 0 250px;
+  padding: 50px 0;
+  border-radius: 20px;
+}
+
+.inputItems3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 28%;
+      grid-template-columns: 30% 30% 28%;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  margin-left: 7%;
+  margin-right: 5%;
+}
+
+#updateProfile {
   border-radius: 20px;
   background-color: #26b99a;
-  width: 80%;
+  width: 20%;
   margin-left: 10%;
   color: white;
   height: 40px;
@@ -205,46 +258,20 @@
   transition: .5s;
 }
 
-.CreateShipmentBtn:hover {
+#updateProfile:hover {
   cursor: pointer;
   background-color: #1d8b73;
 }
 
-.newShipmentItems {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  margin-top: 15px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.newShipmentItem {
-  width: 80%;
-  margin-left: 10%;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.newShipmentItem input {
-  width: 100%;
-  height: 20px;
-  border: solid 2px;
-  border-radius: 20px;
-  padding: 5px;
-}
-
-.loginView {
+.registerView {
   width: 50%;
   margin-left: 25%;
+  padding-top: 200px;
 }
 
-.loginHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
+.inputPassword {
+  padding-bottom: 10px;
+  border-bottom: solid #26b99a;
 }
 
 #app {
@@ -261,7 +288,50 @@ body {
 }
 
 .header {
-  float: left;
+  text-align: left;
   margin-left: 250px;
+}
+
+.button {
+  border-radius: 20px;
+  background-color: #26b99a;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  color: white;
+  height: 40px;
+  padding-top: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #1d8b73;
+}
+
+.inputItems {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.inputItem {
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.inputItem input {
+  width: 100%;
+  height: 20px;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 5px;
 }
 /*# sourceMappingURL=style.css.map */

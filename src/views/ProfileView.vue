@@ -1,62 +1,70 @@
+<script>
+import SideBar from "../components/side-bar.vue"
+export default { components: { SideBar }}
+</script>
+
 <template>
+
+    <SideBar />
+
   <div class="profileView">
 
-    <p>User profile</p>
+  <h2 class="header">User profile</h2>
 
-    <div>
+    <div class="profileContainer">
 
-        <p>Edit profile</p>
-        <p>Complete or edit your profile</p>
+        <h2 class="profileViewHeader">Edit profile</h2>
+        <h3 class="profileViewHeader">Complete or edit your profile</h3>
 
-        <div>
-            <div>
-                <p>Firstname*</p>
+        <div class="inputItems">
+            <div class="inputItem">
+                <h4>Firstname*</h4>
                 <input placeholder="Your firstname" />
             </div>
-            <div>
-                <p>Lastname*</p>
+            <div class="inputItem">
+                <h4>Lastname*</h4>
                 <input placeholder="Your lastname" />
             </div>
         </div>
 
-        <div>
-            <div>
-                <p>E-mail*</p>
+        <div class="inputItems3">
+            <div class="inputItem">
+                <h4>E-mail*</h4>
                 <input placeholder="Your e-mail" />
             </div>
-            <div>
-                <p>Password*</p>
+            <div class="inputItem inputPassword">
+                <h4>Password*</h4>
                 <input placeholder="Your password" />
             </div>
-            <div>
-                <p>Re-enter password*</p>
+            <div class="inputItem inputPassword">
+                <h4>Re-enter password*</h4>
                 <input placeholder="Your re-entered password" />
             </div>
         </div>
 
-        <div>
-            <div>
-                <p>Date of birth</p>
+        <div class="inputItems">
+            <div class="inputItem">
+                <h4>Date of birth</h4>
                 <input placeholder="Your date of birth" />
             </div>
-            <div>
-                <p>Country of residence</p>
+            <div class="inputItem">
+                <h4>Country of residence</h4>
                 <input placeholder="Your country" />
             </div>
         </div>
 
-        <div>
-            <div>
-                <p>Zip/Postal code</p>
+        <div class="inputItems">
+            <div class="inputItem">
+                <h4>Zip/Postal code</h4>
                 <input placeholder="Your zip/postal code" />
             </div>
-            <div>
-                <p>Contact number</p>
+            <div class="inputItem">
+                <h4>Contact number</h4>
                 <input placeholder="Your contact number" />
             </div>
         </div>
 
-        <p>Update account</p>
+        <p class="button" id="updateProfile">Update account</p>
 
     </div>
 

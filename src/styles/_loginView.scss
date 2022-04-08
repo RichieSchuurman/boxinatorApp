@@ -1,9 +1,29 @@
 .loginView {
     width: 50%;
     margin-left: 25%;
+    padding-top: 200px;
 }
 
 .loginHeader {
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    & img {
+        height: 100px;
+    }
+}
+
+.registerText {
+    display: flex;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+    & p:last-of-type {
+        color: $TertiaryColor;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover {
+            color: $TertiaryHover;
+        }
+    }
 }

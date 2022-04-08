@@ -3,6 +3,8 @@
 @import "./mainView";
 @import "./newShipment";
 @import "./loginView";
+@import "./profileView";
+@import "./registerView";
 
 #app {
     padding: 0;
@@ -18,6 +20,44 @@ body {
 }
 
 .header {
-    float: left;
+    text-align: left;
     margin-left: 250px;
+}
+
+.button {
+    border-radius: 20px;
+    background-color: $TertiaryColor;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    color: white;
+    height: 40px;
+    padding-top: 20px;
+    transition: .5s;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+        background-color: $TertiaryHover;
+    }
+}
+
+.inputItems {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.inputItem {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 20px;
+    & input {
+        width: 100%;
+        height: 20px;
+        border: solid 2px;
+        border-radius: 20px;
+        padding: 5px;
+    }
 }
