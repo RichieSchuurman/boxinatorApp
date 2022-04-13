@@ -48,3 +48,13 @@
         background-color: $TertiaryHover;
     }
 }
+
+#logOutBtn {
+    position: absolute;
+    bottom: 35px;
+    width: 85%;
+    cursor: pointer;
+    &.router-link-exact-active {
+        background-color: $SecondaryColor;
+    }
+}

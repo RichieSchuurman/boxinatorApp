@@ -1,3 +1,5 @@
+@import "./variables";
+
 .loginView {
     width: 50%;
     margin-left: 25%;
@@ -18,12 +20,32 @@
     font-weight: bold;
     width: 80%;
     margin-left: 10%;
-    & p:last-of-type {
-        color: $TertiaryColor;
-        margin-left: 10px;
-        cursor: pointer;
-        &:hover {
-            color: $TertiaryHover;
-        }
+}
+
+.toRegister {
+    text-decoration: none;
+    color: $TertiaryColor;
+    margin-left: 10px;
+    margin-top: 16px;
+    cursor: pointer;
+    &:hover {
+        color: $TertiaryHover;
+    }
+}
+
+#guestLogin {
+    background-color: $SecondaryColor;
+    // width: 100%;
+    // border-radius: 20px;
+    // background-color: $TertiaryColor;
+    // width: 80%;
+    // margin-left: 10%;
+    // color: white;
+    // height: 40px;
+    // padding-top: 20px;
+    // transition: .5s;
+    // font-weight: bold;
+    &:hover {
+        background-color: $PrimaryColor;
     }
 }

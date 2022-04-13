@@ -61,6 +61,17 @@
   background-color: #1d8b73;
 }
 
+#logOutBtn {
+  position: absolute;
+  bottom: 35px;
+  width: 85%;
+  cursor: pointer;
+}
+
+#logOutBtn.router-link-exact-active {
+  background-color: #556080;
+}
+
 #createNewShipment {
   float: right;
   margin-top: -50px;
@@ -74,18 +85,19 @@
   margin: 150px 20px 0 250px;
   padding-bottom: 30px;
   padding-top: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
   border-radius: 10px;
   position: relative;
 }
 
 .ordersContainerHeader {
   background-color: #434c6d;
-  margin-left: 2%;
-  margin-right: 2%;
   height: 40px;
-  width: 94%;
-  position: absolute;
+  position: relative;
   margin-top: -60px;
+  margin-left: -4%;
+  margin-right: -4%;
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 2%;
@@ -95,27 +107,6 @@
 }
 
 .orderItems {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 15% 20% 20%;
-      grid-template-columns: 20% 15% 20% 20%;
-  -webkit-column-gap: 5%;
-          column-gap: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-bottom: solid 2px #556080;
-  text-align: left;
-}
-
-.currentOrderItems {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 15% 15% 15% 15% 10%;
-      grid-template-columns: 15% 15% 15% 15% 10%;
-  -webkit-column-gap: 5%;
-          column-gap: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
   border-bottom: solid 2px #556080;
   text-align: left;
 }
@@ -125,10 +116,11 @@
   text-align: center;
   color: white;
   width: 80%;
-  font-size: 15px;
   font-weight: bold;
   border-radius: 10px;
-  padding-top: 1px;
+  padding-top: 2px;
+  height: 20px;
+  margin-top: 15px;
 }
 
 .orderColor {
@@ -172,6 +164,7 @@
   width: 50%;
   border-radius: 10px;
   padding-top: 50px;
+  padding-bottom: 50px;
   min-width: 400px;
   max-width: 750px;
   top: 400px;
@@ -180,6 +173,25 @@
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 0px 10px #000000;
           box-shadow: 0px 0px 10px #000000;
+}
+
+.colorInputItem {
+  width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.colorInputItem input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 20px;
+}
+
+.colorInputItem input:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .loginView {
@@ -213,14 +225,24 @@
   margin-left: 10%;
 }
 
-.registerText p:last-of-type {
+.toRegister {
+  text-decoration: none;
   color: #26b99a;
   margin-left: 10px;
+  margin-top: 16px;
   cursor: pointer;
 }
 
-.registerText p:last-of-type:hover {
+.toRegister:hover {
   color: #1d8b73;
+}
+
+#guestLogin {
+  background-color: #556080;
+}
+
+#guestLogin:hover {
+  background-color: #434c6d;
 }
 
 .profileViewHeader {
@@ -297,17 +319,16 @@ body {
   background-color: #26b99a;
   width: 80%;
   margin-left: 10%;
-  margin-top: 50px;
   color: white;
   height: 40px;
   padding-top: 20px;
   -webkit-transition: .5s;
   transition: .5s;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover {
-  cursor: pointer;
   background-color: #1d8b73;
 }
 
@@ -328,10 +349,28 @@ body {
 }
 
 .inputItem input {
-  width: 100%;
+  width: calc(100% - 15px);
   height: 20px;
   border: solid 2px;
   border-radius: 20px;
   padding: 5px;
+  padding-left: 15px;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+  width: 10px;
+  height: 10px;
+}
+
+.slider {
+  position: absolute;
+  padding-bottom: 100%;
+  padding-top: 100px;
+}
+
+.spacing {
+  width: 15px;
 }
 /*# sourceMappingURL=style.css.map */

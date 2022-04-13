@@ -29,14 +29,13 @@ body {
     background-color: $TertiaryColor;
     width: 80%;
     margin-left: 10%;
-    margin-top: 50px;
     color: white;
     height: 40px;
     padding-top: 20px;
     transition: .5s;
     font-weight: bold;
+    cursor: pointer;
     &:hover {
-        cursor: pointer;
         background-color: $TertiaryHover;
     }
 }
@@ -54,10 +53,28 @@ body {
     text-align: left;
     margin-bottom: 20px;
     & input {
-        width: 100%;
+        width: calc(100% - 15px);
         height: 20px;
         border: solid 2px;
         border-radius: 20px;
         padding: 5px;
+        padding-left: 15px;
     }
+}
+
+.required:after {
+    content: " *";
+    color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.slider {
+    position: absolute;
+    padding-bottom: 100%;
+    padding-top: 100px;
+}
+
+.spacing {
+    width: 15px;
 }
