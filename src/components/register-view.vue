@@ -62,7 +62,9 @@ export default { components: { SideBar }}
       </div>
     </div>
 
-    <p class="button">Register account</p>
+    <router-link class="loginBtn" to="/user">
+      <p class="button">Register account</p>
+    </router-link>
 
     <div class="registerText">
       <p>Allready have an account?</p>

@@ -26,9 +26,13 @@ export default { components: { SideBar }}
 
     <br />
 
-    <p class="button">Login</p>
+    <router-link class="loginBtn" to="/user">
+      <p class="button">Log in</p>
+    </router-link>
     <p>Or</p>
-    <p class="button" id="guestLogin">Continue as guest</p>
+    <router-link class="loginBtn" to="/guest">
+      <p class="button" id="guestLogin">Continue as guest</p>
+    </router-link>
 
     <div class="registerText">
       <p>Not registered yet?</p>

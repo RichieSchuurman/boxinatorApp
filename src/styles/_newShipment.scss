@@ -12,13 +12,13 @@
 
 .closeBtn {
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 15px;
+    height: 50px;
     cursor: pointer;
-    background-color: $TertiaryColor;
     transition: .5s;
     &:hover {
-        background-color: $TertiaryHover;
+        filter: brightness(75%);
     }
 }
 

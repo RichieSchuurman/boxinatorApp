@@ -144,16 +144,17 @@
 
 .closeBtn {
   position: absolute;
-  top: 0;
+  top: 15px;
   right: 15px;
+  height: 50px;
   cursor: pointer;
-  background-color: #26b99a;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .closeBtn:hover {
-  background-color: #1d8b73;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
 }
 
 .newShipmentContainer {
@@ -243,6 +244,10 @@
 
 #guestLogin:hover {
   background-color: #434c6d;
+}
+
+.loginBtn {
+  text-decoration: none;
 }
 
 .profileViewHeader {

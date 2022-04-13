@@ -1,15 +1,7 @@
 <script>
-import NewShipment from "./new-shipment.vue"
-import SideBar from "./side-bar.vue"
-export default { 
-  components: { NewShipment, SideBar },
-  data() {
-    return {
-      showShipment: false
-    }
-  }
-}
-
+  import NewShipment from "./new-shipment.vue"
+  import SideBar from "./side-bar.vue"
+  export default {components: { NewShipment, SideBar }}
 </script>
 
 <template>
@@ -17,9 +9,8 @@ export default {
   <SideBar />
 
   <h2 class="header">User Dashboard</h2>
-  <h2 v-on:click="showShipment = !showShipment" class="button" id="createNewShipment">Create shipment</h2>
 
-  <NewShipment v-if="showShipment === true" />
+  <NewShipment />
 
   <br />
 
