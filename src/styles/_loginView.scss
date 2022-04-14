@@ -36,7 +36,9 @@
 #guestLogin {
     background-color: $SecondaryColor;
     &:hover {
-        background-color: $PrimaryColor;
+        background-color: white;
+        color: $SecondaryColor;
+        border: solid 1px $SecondaryColor;
     }
 }
 

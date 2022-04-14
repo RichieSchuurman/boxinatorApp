@@ -19,16 +19,18 @@
 }
 
 #updateProfile {
-    border-radius: 20px;
-    background-color: $TertiaryColor;
-    width: 20%;
+    // border-radius: 20px;
+    // background-color: $TertiaryColor;
+    width: 200px;
+    float: left;
     margin-left: 10%;
-    color: white;
-    height: 40px;
-    padding-top: 20px;
-    transition: .5s;
+    // margin-left: 10%;
+    // color: white;
+    // height: 40px;
+    // padding-top: 20px;
+    // transition: .5s;
     &:hover {
-        cursor: pointer;
-        background-color: $TertiaryHover;
+        // cursor: pointer;
+        // background-color: $TertiaryHover;
     }
 }

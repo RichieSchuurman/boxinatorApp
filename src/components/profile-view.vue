@@ -19,52 +19,52 @@ export default { components: { SideBar }}
         <div class="inputItems">
             <div class="inputItem">
                 <h4 class="required">Firstname</h4>
-                <input placeholder="Your firstname" type="text" />
+                <n-input round clearable placeholder="Your first name" class="inputField" />
             </div>
             <div class="inputItem">
                 <h4 class="required">Lastname</h4>
-                <input placeholder="Your lastname" type="text" />
+                <n-input round clearable placeholder="Your last name" class="inputField" />
             </div>
         </div>
 
         <div class="inputItems3">
             <div class="inputItem">
                 <h4 class="required">E-mail</h4>
-                <input placeholder="Your e-mail" type="email" />
+                <n-input round clearable placeholder="Your e-mail" class="inputField" />
             </div>
             <div class="inputItem inputPassword">
                 <h4 class="required">Password</h4>
-                <input placeholder="Your password" type="password" />
+                <n-input round clearable type="password" show-password-on="click" placeholder="Your password" class="inputField" />
             </div>
             <div class="inputItem inputPassword">
                 <h4 class="required">Re-enter password</h4>
-                <input placeholder="Your re-entered password" type="password" />
+                <n-input round clearable type="password" show-password-on="click" placeholder="Re-enter your password" class="inputField" />
             </div>
         </div>
 
         <div class="inputItems">
             <div class="inputItem">
                 <h4>Date of birth</h4>
-                <input placeholder="Your date of birth" type="date" />
+                <n-date-picker class="inputField" />
             </div>
             <div class="inputItem">
                 <h4>Country of residence</h4>
-                <input placeholder="Your country" type="text" />
+                <n-input round clearable placeholder="Your country" class="inputField" />
             </div>
         </div>
 
         <div class="inputItems">
             <div class="inputItem">
                 <h4>Zip/Postal code</h4>
-                <input placeholder="Your zip/postal code" type="text" />
+                <n-input round clearable placeholder="Your zip/postal code" class="inputField" />
             </div>
             <div class="inputItem">
                 <h4>Contact number</h4>
-                <input placeholder="Your contact number" type="number" />
+                <n-input-number round clearable placeholder="Your contact number" class="inputField" />
             </div>
         </div>
 
-        <p class="button" id="updateProfile">Update account</p>
+        <n-button class="button" id="updateProfile">Update account</n-button>
 
     </div>
 

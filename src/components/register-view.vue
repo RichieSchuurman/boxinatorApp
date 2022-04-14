@@ -1,13 +1,9 @@
 <script>
-import SideBar from "./side-bar.vue"
-export default { components: { SideBar }}
 </script>
 
 <template>
 
-    <SideBar />
-
-  <div class="registerView">
+  <div class="loginView">
 
     <div class="loginHeader">
       <img src="../assets/logo.png" />
@@ -17,53 +13,53 @@ export default { components: { SideBar }}
     <div class="inputItems">
       <div class="inputItem">
         <p class="required">Firstname</p>
-        <input placeholder="Your firstname" type="text"/>
+        <n-input round clearable placeholder="Your first name" class="inputField" />
       </div>
       <div class="inputItem">
         <p class="required">Lastname*</p>
-        <input placeholder="Your lastname" type="text"/>
+        <n-input round clearable placeholder="Your last name" class="inputField" />
       </div>
     </div>
 
     <div class="inputItem">
       <p class="required">E-mail</p>
-      <input placeholder="Your e-mail" type="email"/>
+      <n-input round clearable placeholder="Your e-mail" class="inputField" />
     </div>
 
     <div class="inputItem inputPassword">
       <p class="required">Password</p>
-      <input placeholder="Your password" type="password"/>
+      <n-input round clearable type="password" show-password-on="click" placeholder="Your password" class="inputField" />
     </div>
 
     <div class="inputItem inputPassword">
       <p class="required">Re-enter password</p>
-      <input placeholder="Your re-entered password" type="password"/>
+      <n-input round clearable type="password" show-password-on="click" placeholder="Re-enter your password" class="inputField" />
     </div>
 
     <div class="inputItems">
       <div class="inputItem">
         <p>Date of birth</p>
-        <input placeholder="Your date of birth" type="date" />
+        <n-date-picker class="inputField" />
       </div>
       <div class="inputItem">
         <p>Country of residence</p>
-        <input placeholder="Your country" />
+        <n-input round clearable placeholder="Your country" class="inputField" />
       </div>
     </div>
 
     <div class="inputItems">
       <div class="inputItem">
         <p>Zip/Postal code</p>
-        <input placeholder="Your zip/postal code" />
+        <n-input round clearable placeholder="Your zip/postal code" class="inputField" />
       </div>
       <div class="inputItem">
         <p>Contact number</p>
-        <input placeholder="Your contact number" type="number" />
+        <n-input-number round clearable placeholder="Your contact number" class="inputField" />
       </div>
     </div>
 
     <router-link class="loginBtn" to="/user">
-      <p class="button">Register account</p>
+      <n-button class="button centerBtn">Register account</n-button>
     </router-link>
 
     <div class="registerText">

@@ -1,11 +1,7 @@
 <script>
-import SideBar from "./side-bar.vue"
-export default { components: { SideBar }}
 </script>
 
 <template>
-
-  <SideBar />
 
   <div class="loginView">
 
@@ -16,22 +12,22 @@ export default { components: { SideBar }}
 
     <div class="inputItem">
       <h4>Email</h4>
-      <input placeholder="Your e-mail" />
+      <n-input round clearable placeholder="Your e-mail" class="inputField" />
     </div>
 
     <div class="inputItem">
       <h4>Password</h4>
-      <input placeholder="Your password" />
+      <n-input round clearable type="password" show-password-on="click" placeholder="Your e-mail" class="inputField" />
     </div>
 
     <br />
 
     <router-link class="loginBtn" to="/user">
-      <p class="button">Log in</p>
+      <n-button class="button centerBtn">Log in</n-button>
     </router-link>
     <p>Or</p>
     <router-link class="loginBtn" to="/guest">
-      <p class="button" id="guestLogin">Continue as guest</p>
+      <n-button class="button centerBtn" id="guestLogin">Continue as guest</n-button>
     </router-link>
 
     <div class="registerText">

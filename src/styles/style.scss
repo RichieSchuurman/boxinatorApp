@@ -4,7 +4,6 @@
 @import "./newShipment";
 @import "./loginView";
 @import "./profileView";
-@import "./registerView";
 
 #app {
     padding: 0;
@@ -25,18 +24,20 @@ body {
 }
 
 .button {
-    border-radius: 20px;
     background-color: $TertiaryColor;
     width: 80%;
     margin-left: 10%;
-    color: white;
-    height: 40px;
-    padding-top: 20px;
-    transition: .5s;
+    font-size: 20px;
     font-weight: bold;
-    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 0;
     &:hover {
-        background-color: $TertiaryHover;
+        background-color: white;
+        color: $TertiaryColor;
+    }
+    &.centerBtn {
+        margin-left: 0;
     }
 }
 
@@ -52,14 +53,15 @@ body {
     margin-left: 10%;
     text-align: left;
     margin-bottom: 20px;
-    & input {
-        width: calc(100% - 15px);
-        height: 20px;
-        border: solid 2px;
-        border-radius: 20px;
-        padding: 5px;
-        padding-left: 15px;
-    }
+}
+
+.inputField {
+    border: solid 1px;
+}
+
+.inputPassword {
+    padding-bottom: 10px;
+    border-bottom: solid $TertiaryColor;
 }
 
 .required:after {

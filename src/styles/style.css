@@ -131,17 +131,6 @@
   border-radius: 10px;
 }
 
-.blurBackground {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-
 .closeBtn {
   position: absolute;
   top: 15px;
@@ -158,41 +147,23 @@
 }
 
 .newShipmentContainer {
-  position: fixed;
-  z-index: 3;
-  min-height: 500px;
   background-color: white;
-  width: 50%;
-  border-radius: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  min-width: 400px;
+  border-radius: 20px;
   max-width: 750px;
-  top: 400px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 0px 10px #000000;
           box-shadow: 0px 0px 10px #000000;
+}
+
+#createShipmentbtn {
+  float: right;
+  top: -40px;
+  right: 20px;
+  width: 200px;
 }
 
 .colorInputItem {
   width: 80%;
   margin-left: 10%;
-  text-align: left;
-}
-
-.colorInputItem input {
-  width: 100%;
-  height: 35px;
-  padding: 5px;
-  border: solid 2px;
-  border-radius: 20px;
-}
-
-.colorInputItem input:hover {
-  background-color: lightgray;
-  cursor: pointer;
 }
 
 .loginView {
@@ -243,7 +214,9 @@
 }
 
 #guestLogin:hover {
-  background-color: #434c6d;
+  background-color: white;
+  color: #556080;
+  border: solid 1px #556080;
 }
 
 .loginBtn {
@@ -274,31 +247,9 @@
 }
 
 #updateProfile {
-  border-radius: 20px;
-  background-color: #26b99a;
-  width: 20%;
+  width: 200px;
+  float: left;
   margin-left: 10%;
-  color: white;
-  height: 40px;
-  padding-top: 20px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-#updateProfile:hover {
-  cursor: pointer;
-  background-color: #1d8b73;
-}
-
-.registerView {
-  width: 50%;
-  margin-left: 25%;
-  padding-top: 200px;
-}
-
-.inputPassword {
-  padding-bottom: 10px;
-  border-bottom: solid #26b99a;
 }
 
 #app {
@@ -320,21 +271,23 @@ body {
 }
 
 .button {
-  border-radius: 20px;
   background-color: #26b99a;
   width: 80%;
   margin-left: 10%;
-  color: white;
-  height: 40px;
-  padding-top: 20px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  font-size: 20px;
   font-weight: bold;
-  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
 .button:hover {
-  background-color: #1d8b73;
+  background-color: white;
+  color: #26b99a;
+}
+
+.button.centerBtn {
+  margin-left: 0;
 }
 
 .inputItems {
@@ -353,13 +306,13 @@ body {
   margin-bottom: 20px;
 }
 
-.inputItem input {
-  width: calc(100% - 15px);
-  height: 20px;
-  border: solid 2px;
-  border-radius: 20px;
-  padding: 5px;
-  padding-left: 15px;
+.inputField {
+  border: solid 1px;
+}
+
+.inputPassword {
+  padding-bottom: 10px;
+  border-bottom: solid #26b99a;
 }
 
 .required:after {
