@@ -89,6 +89,7 @@
   padding-right: 5%;
   border-radius: 10px;
   position: relative;
+  min-width: 600px;
 }
 
 .ordersContainerHeader {
@@ -156,7 +157,7 @@
 
 #createShipmentbtn {
   float: right;
-  top: -40px;
+  top: -50px;
   right: 20px;
   width: 200px;
 }
@@ -233,6 +234,7 @@
   margin: 100px 20px 0 250px;
   padding: 50px 0;
   border-radius: 20px;
+  min-width: 700px;
 }
 
 .inputItems3 {

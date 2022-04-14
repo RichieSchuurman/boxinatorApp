@@ -7,9 +7,7 @@ export default { components: { SideBar }}
 
     <SideBar />
 
-  <div class="profileView">
-
-  <h2 class="header">User profile</h2>
+    <h2 class="header">User profile</h2>
 
     <div class="profileContainer">
 
@@ -67,6 +65,4 @@ export default { components: { SideBar }}
         <n-button class="button" id="updateProfile">Update account</n-button>
 
     </div>
-
-  </div>
 </template>

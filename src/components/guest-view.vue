@@ -14,7 +14,7 @@
 
   <br />
 
-<!-- Completed shipments -->
+  <!-- Completed shipments -->
   <div class="ordersContainer">
     <p class="ordersContainerHeader">Completed Shipments</p>
 
@@ -25,7 +25,7 @@
       <n-gi> <h4> Destination country </h4> </n-gi>
     </n-grid>
 
-<!-- For every completed shipment this div -->
+    <!-- For every completed shipment this div -->
     <n-grid x-gap="10" :cols="4"  class="orderItems">
       <n-gi> <p> Timothy Blom </p> </n-gi>
       <n-gi class="orderHighlight"> Premium </n-gi>
@@ -35,7 +35,7 @@
 
   </div>
 
-<!-- Current shipments -->
+  <!-- Current shipments -->
   <div class="ordersContainer">
     <p class="ordersContainerHeader">Current Shipments</p>
 
@@ -47,7 +47,7 @@
       <n-gi> <h4> Status </h4> </n-gi>
     </n-grid>
 
-<!-- For every current shipment this div -->
+    <!-- For every current shipment this div -->
     <n-grid  x-gap="10" :cols="5" class="orderItems">
       <n-gi> <p> Timothy Blom </p> </n-gi>
       <n-gi> <p class="orderHighlight"> Premium </p> </n-gi>

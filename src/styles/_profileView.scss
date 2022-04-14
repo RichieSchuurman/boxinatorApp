@@ -8,6 +8,7 @@
     margin: 100px 20px 0 250px;
     padding: 50px 0;
     border-radius: 20px;
+    min-width: 700px;
 }
 
 .inputItems3 {
@@ -19,18 +20,7 @@
 }
 
 #updateProfile {
-    // border-radius: 20px;
-    // background-color: $TertiaryColor;
     width: 200px;
     float: left;
     margin-left: 10%;
-    // margin-left: 10%;
-    // color: white;
-    // height: 40px;
-    // padding-top: 20px;
-    // transition: .5s;
-    &:hover {
-        // cursor: pointer;
-        // background-color: $TertiaryHover;
-    }
 }
