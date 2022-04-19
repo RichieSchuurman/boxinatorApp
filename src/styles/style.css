@@ -33,6 +33,22 @@
   width: 50px;
   height: 50px;
   margin: 10px;
+  margin-left: -5px;
+}
+
+.sidebarHeader p {
+  overflow: hidden;
+}
+
+#sideBarToggle {
+  display: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#sideBarToggle:hover {
+  -webkit-filter: contrast(white);
+          filter: contrast(white);
 }
 
 .navBtn {
@@ -47,10 +63,23 @@
   -webkit-transition: .5s;
   transition: .5s;
   background-color: #556080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
 .navBtn:hover {
   background-color: #1d8b73;
+}
+
+.navBtnImg {
+  height: 25px;
+  margin: 3px 10px 0 8px;
+}
+
+.navBtnText {
+  margin: 0;
 }
 
 .router-link-exact-active {
@@ -65,11 +94,27 @@
   position: absolute;
   bottom: 35px;
   width: 85%;
+  height: 32px;
   cursor: pointer;
 }
 
 #logOutBtn.router-link-exact-active {
   background-color: #556080;
+}
+
+@media only screen and (max-width: 720px) {
+  .sidebar {
+    width: 40px;
+  }
+  #sideBarToggle {
+    display: block;
+  }
+  #logOutBtn {
+    width: 55%;
+  }
+  #sideBarOpen {
+    width: 200px;
+  }
 }
 
 #createNewShipment {
@@ -89,7 +134,8 @@
   padding-right: 5%;
   border-radius: 10px;
   position: relative;
-  min-width: 600px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .ordersContainerHeader {
@@ -132,6 +178,15 @@
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 720px) {
+  .ordersContainer {
+    margin-left: 100px;
+  }
+  .header {
+    margin-left: 100px;
+  }
+}
+
 .closeBtn {
   position: absolute;
   top: 15px;
@@ -165,6 +220,14 @@
 .colorInputItem {
   width: 80%;
   margin-left: 10%;
+}
+
+@media only screen and (max-width: 720px) {
+  #createShipmentbtn {
+    margin-top: 50px;
+    margin-left: 120px;
+    float: left;
+  }
 }
 
 .loginView {
@@ -231,10 +294,9 @@
 
 .profileContainer {
   background-color: white;
-  margin: 100px 20px 0 250px;
+  margin: 100px 20px 100px 250px;
   padding: 50px 0;
   border-radius: 20px;
-  min-width: 700px;
 }
 
 .inputItems3 {
@@ -252,6 +314,16 @@
   width: 200px;
   float: left;
   margin-left: 10%;
+}
+
+@media only screen and (max-width: 720px) {
+  .profileContainer {
+    margin-left: 100px;
+  }
+  .inputItems3 {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 
 #app {
@@ -332,5 +404,15 @@ body {
 
 .spacing {
   width: 15px;
+}
+
+@media only screen and (max-width: 720px) {
+  .header {
+    margin-left: 100px;
+  }
+  .inputItems {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

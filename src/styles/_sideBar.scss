@@ -23,6 +23,19 @@
         width: 50px;
         height: 50px;
         margin: 10px;
+        margin-left: -5px;
+    }
+    & p {
+        overflow: hidden;
+    }
+}
+
+#sideBarToggle {
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+        filter: contrast(white);
     }
 }
 
@@ -37,9 +50,20 @@
     font-size: 20px;
     transition: .5s;
     background-color: $SecondaryColor;
+    display: flex;
+    overflow: hidden;
     &:hover {
         background-color: $TertiaryHover;
     }
+}
+
+.navBtnImg {
+    height: 25px;
+    margin: 3px 10px 0 8px;
+}
+
+.navBtnText {
+    margin: 0;
 }
 
 .router-link-exact-active {
@@ -53,8 +77,29 @@
     position: absolute;
     bottom: 35px;
     width: 85%;
+    height: 32px;
     cursor: pointer;
     &.router-link-exact-active {
         background-color: $SecondaryColor;
     }
+}
+
+@media only screen and (max-width: 720px) {
+
+.sidebar {
+    width: 40px;
+}
+
+#sideBarToggle {
+    display: block;
+}
+
+#logOutBtn {
+    width: 55%;
+}
+
+#sideBarOpen {
+    width: 200px;
+}
+
 }

@@ -62,6 +62,8 @@ export default { components: { SideBar }}
             </div>
         </div>
 
+        <br />
+
         <n-button class="button" id="updateProfile">Update account</n-button>
 
     </div>

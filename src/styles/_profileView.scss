@@ -5,10 +5,9 @@
 
 .profileContainer {
     background-color: white;
-    margin: 100px 20px 0 250px;
+    margin: 100px 20px 100px 250px;
     padding: 50px 0;
     border-radius: 20px;
-    min-width: 700px;
 }
 
 .inputItems3 {
@@ -23,4 +22,16 @@
     width: 200px;
     float: left;
     margin-left: 10%;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .profileContainer {
+        margin-left: 100px;
+    }
+
+    .inputItems3 {
+        grid-template-columns: 100%;
+    }
+    
 }

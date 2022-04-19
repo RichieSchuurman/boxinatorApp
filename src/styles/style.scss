@@ -80,3 +80,14 @@ body {
 .spacing {
     width: 15px;
 }
+
+@media only screen and (max-width: 720px) {
+
+    .header {
+        margin-left: 100px;
+    }
+
+    .inputItems {
+        grid-template-columns: 100%;
+    }
+}
