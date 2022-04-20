@@ -3,7 +3,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      isActive: true
+      isActive: false
     }
   }
 })
@@ -11,7 +11,7 @@ export default defineComponent({
 
 <template>
 
-  <nav class="sidebar" v-bind:id="{sideBarOpen: isActive}">
+  <nav class="sidebar" :class="{sideBarOpen: isActive}">
 
     <div class="sidebarHeader">
       <img src="../assets/logo.png" />
@@ -22,15 +22,7 @@ export default defineComponent({
       <img src="../assets/menuLogo.png" />
     </div>
 
-    <router-link class="navBtn" to="/guest">
-      <img src="../assets/dashboardLogo.png" class="navBtnImg" />
-      <p class="navBtnText">Dashboard</p>
-    </router-link>
-    <router-link class="navBtn" to="/user">
-      <img src="../assets/dashboardLogo.png" class="navBtnImg" />
-      <p class="navBtnText">Dashboard</p>
-    </router-link>
-    <router-link class="navBtn" to="/admin">
+    <router-link class="navBtn" to="/dashboard">
       <img src="../assets/dashboardLogo.png" class="navBtnImg" />
       <p class="navBtnText">Dashboard</p>
     </router-link>

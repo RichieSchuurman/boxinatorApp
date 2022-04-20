@@ -22,11 +22,11 @@
 
     <br />
 
-    <router-link class="loginBtn" to="/user">
+    <router-link class="loginBtn" to="/dashboard">
       <n-button class="button centerBtn">Log in</n-button>
     </router-link>
     <p>Or</p>
-    <router-link class="loginBtn" to="/guest">
+    <router-link class="loginBtn" to="/dashboard">
       <n-button class="button centerBtn" id="guestLogin">Continue as guest</n-button>
     </router-link>
 

@@ -1,5 +1,5 @@
 <script>
-import AdminView from "../components/admin-view.vue"
+import AdminView from "../components/dashboard-view.vue"
 export default { components: { AdminView }}
 </script>
 <template>

@@ -58,7 +58,9 @@
       </div>
     </div>
 
-    <router-link class="loginBtn" to="/user">
+    <br />
+
+    <router-link class="loginBtn" to="/dashboard">
       <n-button class="button centerBtn">Register account</n-button>
     </router-link>
 

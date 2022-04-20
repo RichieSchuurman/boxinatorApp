@@ -1,6 +1,6 @@
 @import "./variables";
 @import "./sideBar";
-@import "./mainView";
+@import "./dashboardView";
 @import "./newShipment";
 @import "./loginView";
 @import "./profileView";
@@ -32,6 +32,7 @@ body {
     color: white;
     border-radius: 10px;
     padding: 10px 0;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.212));
     &:hover {
         background-color: white;
         color: $TertiaryColor;

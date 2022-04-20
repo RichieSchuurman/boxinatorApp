@@ -4,6 +4,7 @@
     width: 50%;
     margin-left: 25%;
     padding-top: 200px;
+    margin-bottom: 200px;
 }
 
 .loginHeader {
@@ -44,4 +45,13 @@
 
 .loginBtn {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
+
+.loginView {
+    width: 100%;
+    margin-left: 0%;
+}
+
 }

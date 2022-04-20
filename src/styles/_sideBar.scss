@@ -34,6 +34,7 @@
     display: none;
     margin-top: 10px;
     cursor: pointer;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.212));
     &:hover {
         filter: contrast(white);
     }
@@ -84,6 +85,10 @@
     }
 }
 
+.sideBarOpen {
+    width: 200px;
+}
+
 @media only screen and (max-width: 720px) {
 
 .sidebar {
@@ -98,8 +103,9 @@
     width: 55%;
 }
 
-#sideBarOpen {
+.sideBarOpen {
     width: 200px;
+    filter: drop-shadow(0 0 0.75rem black);
 }
 
 }
