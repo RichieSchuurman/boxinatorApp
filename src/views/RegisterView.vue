@@ -1,7 +1,7 @@
 <script>
-import RegisterView from "../components/register-view.vue"
-export default { components: { RegisterView }}
+import RegisterComponent from "../components/RegisterComponent.vue"
+export default { components: { RegisterComponent }}
 </script>
 <template>
-  <RegisterView />
+  <RegisterComponent />
 </template>

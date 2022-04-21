@@ -1,6 +1,6 @@
 <script>
-  import SideBar from "./side-bar.vue"
-  import NewShipment from "./new-shipment.vue"
+  import SideBar from "../components/SidebarComponent.vue"
+  import NewShipment from "../components/NewShipmentOverlayComponent.vue"
   import { defineComponent } from "vue";
 
   export default defineComponent({
