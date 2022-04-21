@@ -1,7 +1,7 @@
 <script>
-import ProfileView from "../components/profile-view.vue"
-export default { components: { ProfileView }}
+import ProfileComponent from "../components/ProfileComponent.vue"
+export default { components: { ProfileComponent }}
 </script>
 <template>
-  <ProfileView />
+  <ProfileComponent />
 </template>
