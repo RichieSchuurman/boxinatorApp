@@ -1,5 +1,5 @@
 <script>
-import SideBar from "./side-bar.vue"
+import SideBar from "../components/SidebarComponent.vue"
 export default { components: { SideBar }}
 </script>
 

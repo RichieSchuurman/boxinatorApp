@@ -1,7 +1,7 @@
 <script>
-import LoginView from "../components/login-view.vue"
-export default { components: { LoginView }}
+import LoginComponent from "../components/LoginComponent.vue"
+export default { components: { LoginComponent }}
 </script>
 <template>
-  <LoginView />
+  <LoginComponent />
 </template>
