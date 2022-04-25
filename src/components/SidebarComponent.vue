@@ -1,18 +1,33 @@
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from "vue";
+import { useStore } from "vuex";
+import { useRouter } from "vue-router";
+
 export default defineComponent({
   data() {
     return {
-      isActive: false
-    }
-  }
-})
+      isActive: false,
+    };
+  },
+  setup() {
+    const store = useStore();
+    const router = useRouter();
+
+    return {
+      accessToken: computed(() => store.state.accessToken),
+      refreshToken: computed(() => store.state.refreshToken),
+      redirectAfterLogout(accessToken, refreshToken) {
+        store
+          .dispatch("logout", { accessToken, refreshToken })
+          .then(() => router.push("/"));
+      },
+    };
+  },
+});
 </script>
 
 <template>
-
-  <nav class="sidebar" :class="{sideBarOpen: isActive}">
-
+  <nav class="sidebar" :class="{ sideBarOpen: isActive }">
     <div class="sidebarHeader">
       <img src="../assets/logo.png" />
       <p>Boxinator</p>
@@ -30,11 +45,13 @@ export default defineComponent({
       <img src="../assets/profileLogo.png" class="navBtnImg" />
       <p class="navBtnText">Profile</p>
     </router-link>
-    <router-link class="navBtn" id="logOutBtn" to="/">
+    <div
+      class="navBtn"
+      id="logOutBtn"
+      @click="redirectAfterLogout(accessToken, refreshToken)"
+    >
       <img src="../assets/logOutLogo.png" class="navBtnImg" />
       <p class="navBtnText">Log out</p>
-    </router-link>
-
+    </div>
   </nav>
-
 </template>
