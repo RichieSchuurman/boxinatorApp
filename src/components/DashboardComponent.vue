@@ -7,6 +7,32 @@
     components: { NewShipment, SideBar },
     setup() {
       return {
+        items: [
+          {
+            id: 1,
+            name: "Tim",
+            weight: "Premium",
+            color: "Blue",
+            destination: "Netherlands",
+            status: "In transit"
+          },
+          {
+            id: 2,
+            name: "Timothy",
+            weight: "Basic",
+            color: "Blue",
+            destination: "The Netherlands",
+            status: "In transit"
+          },
+          {
+            id: 3,
+            name: "Blom",
+            weight: "Premium",
+            color: "Red",
+            destination: "Norway",
+            status: "In transit"
+          }
+        ],
         status: [
           {
             label: "Order history",
@@ -64,14 +90,12 @@
       <n-gi> <h4> Destination country </h4> </n-gi>
     </n-grid>
 
-<!-- For every completed shipment this div -->
-    <n-grid x-gap="10" :cols="4"  class="orderItems">
-      <n-gi> <p> Timothy Blom </p> </n-gi>
-      <n-gi class="orderHighlight"> Premium </n-gi>
+    <n-grid x-gap="10" :cols="4" v-for="i of items" :key="i.id" class="orderItems">
+      <n-gi> <p> {{i.name}} </p> </n-gi>
+      <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
-      <n-gi> <p> Netherlands </p> </n-gi>
+      <n-gi> <p> {{i.destination}} </p> </n-gi>
     </n-grid>
-
   </div>
 
 <!-- Current shipments -->
@@ -86,19 +110,17 @@
       <n-gi> <h4> Status </h4> </n-gi>
     </n-grid>
 
-<!-- For every current shipment this div -->
-    <n-grid  x-gap="10" :cols="5" class="orderItems">
-      <n-gi> <p> Timothy Blom </p> </n-gi>
-      <n-gi> <p class="orderHighlight"> Premium </p> </n-gi>
+    <n-grid x-gap="10" :cols="5" v-for="i of items" :key="i.id" class="orderItems">
+      <n-gi> <p> {{i.name}} </p> </n-gi>
+      <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
-      <n-gi> <p> Netherlands </p> </n-gi>
+      <n-gi> <p> {{i.destination}} </p> </n-gi>
       <n-gi>
-        <n-dropdown trigger="click" :options="status">
-          <n-button class="orderHighlight"> In transit </n-button>
+        <n-dropdown trigger="click" :options="adminStatus">
+          <n-button class="orderHighlight"> {{i.status}} </n-button>
         </n-dropdown>
       </n-gi>
     </n-grid>
-
   </div>
 
 <!-- All shipments -->
@@ -113,19 +135,17 @@
       <n-gi> <h4> Status </h4> </n-gi>
     </n-grid>
 
-<!-- For every current shipment this div -->
-    <n-grid  x-gap="10" :cols="5" class="orderItems">
-      <n-gi> <p> Timothy Blom </p> </n-gi>
-      <n-gi> <p class="orderHighlight"> Premium </p> </n-gi>
+    <n-grid x-gap="10" :cols="5" v-for="i of items" :key="i.id" class="orderItems">
+      <n-gi> <p> {{i.name}} </p> </n-gi>
+      <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
-      <n-gi> <p> Netherlands </p> </n-gi>
+      <n-gi> <p> {{i.destination}} </p> </n-gi>
       <n-gi>
         <n-dropdown trigger="click" :options="adminStatus">
-          <n-button class="orderHighlight"> In transit </n-button>
+          <n-button class="orderHighlight"> {{i.status}} </n-button>
         </n-dropdown>
       </n-gi>
     </n-grid>
-
   </div>
 
 </template>
