@@ -46,6 +46,10 @@ export default createStore({
             firstName: decodedToken.given_name,
             lastName: decodedToken.family_name,
             email: decodedToken.email,
+            dateOfBirth: decodedToken.date_of_birth,
+            countryOfResidence: decodedToken.country_of_residence,
+            postalCode: decodedToken.postal_code,
+            contactNumber: decodedToken.contact_number,
             accountType: decodedToken.roles[0],
           };
           commit("setAccessToken", data.access_token);
