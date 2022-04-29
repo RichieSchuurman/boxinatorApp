@@ -1,4 +1,5 @@
-# boxinator frontend App
+[![web](https://img.shields.io/static/v1?logo=heroku&message=Online&label=Heroku&color=430098)](https://boxinator-frontend-app.herokuapp.com/#/)
+# Boxinator frontend App
 This is the frontend side for the Boxinator Noroff Case. Here you can login or register a new account and create new shipments, view these shipments on your own dashboard or edit your own user profile.
 
 ## Collaborators
