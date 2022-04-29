@@ -135,7 +135,7 @@
 
 .ordersContainer {
   background-color: white;
-  margin: 150px 20px 0 250px;
+  margin: 150px 20px 100px 250px;
   padding-bottom: 30px;
   padding-top: 30px;
   padding-left: 5%;
@@ -184,6 +184,17 @@
   background-color: lightgray;
   margin-top: 15px;
   border-radius: 10px;
+}
+
+.deleteButtonImg {
+  height: 30px;
+}
+
+.deleteButton {
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+  width: 50px;
 }
 
 @media only screen and (max-width: 720px) {

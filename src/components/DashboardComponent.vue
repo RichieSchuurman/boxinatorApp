@@ -83,14 +83,14 @@
   <div class="ordersContainer">
     <p class="ordersContainerHeader">Completed Shipments (only shows when logged in as user)</p>
 
-    <n-grid x-gap="10" :cols="4" class="orderItems">
+    <n-grid x-gap="5" :cols="4" class="orderItems">
       <n-gi> <h4> Reciever name </h4> </n-gi>
       <n-gi> <h4> Weight </h4> </n-gi>
       <n-gi> <h4> Box color </h4> </n-gi>
       <n-gi> <h4> Destination country </h4> </n-gi>
     </n-grid>
 
-    <n-grid x-gap="10" :cols="4" v-for="i of items" :key="i.id" class="orderItems">
+    <n-grid x-gap="5" :cols="4" v-for="i of items" :key="i.id" class="orderItems">
       <n-gi> <p> {{i.name}} </p> </n-gi>
       <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
@@ -102,15 +102,16 @@
   <div class="ordersContainer">
     <p class="ordersContainerHeader">Current Shipments (only shows when logged in as user or guest)</p>
 
-    <n-grid x-gap="10" :cols="5" class="orderItems">
+    <n-grid x-gap="5" :cols="6" class="orderItems">
       <n-gi> <h4> Reciever name </h4> </n-gi>
       <n-gi> <h4> Weight </h4> </n-gi>
       <n-gi> <h4> Box color </h4> </n-gi>
       <n-gi> <h4> Destination country </h4> </n-gi>
       <n-gi> <h4> Status </h4> </n-gi>
+      <n-gi> <h4 class="deleteButton"> Delete </h4> </n-gi>
     </n-grid>
 
-    <n-grid x-gap="10" :cols="5" v-for="i of items" :key="i.id" class="orderItems">
+    <n-grid x-gap="5" :cols="6" v-for="i of items" :key="i.id" class="orderItems">
       <n-gi> <p> {{i.name}} </p> </n-gi>
       <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
@@ -120,6 +121,11 @@
           <n-button class="orderHighlight"> {{i.status}} </n-button>
         </n-dropdown>
       </n-gi>
+      <n-gi> 
+        <n-button class="deleteButton"> 
+          <img src="../assets/deleteLogo.png" class="deleteButtonImg" /> 
+        </n-button>
+      </n-gi>
     </n-grid>
   </div>
 
@@ -127,15 +133,16 @@
   <div class="ordersContainer">
     <p class="ordersContainerHeader">All Shipments (only shows when logged in as admin)</p>
 
-    <n-grid x-gap="10" :cols="5" class="orderItems">
+    <n-grid x-gap="5" :cols="6" class="orderItems">
       <n-gi> <h4> Reciever name </h4> </n-gi>
       <n-gi> <h4> Weight </h4> </n-gi>
       <n-gi> <h4> Box color </h4> </n-gi>
       <n-gi> <h4> Destination country </h4> </n-gi>
       <n-gi> <h4> Status </h4> </n-gi>
+      <n-gi> <h4 class="deleteButton"> Delete </h4> </n-gi>
     </n-grid>
 
-    <n-grid x-gap="10" :cols="5" v-for="i of items" :key="i.id" class="orderItems">
+    <n-grid x-gap="5" :cols="6" v-for="i of items" :key="i.id" class="orderItems">
       <n-gi> <p> {{i.name}} </p> </n-gi>
       <n-gi class="orderHighlight"> {{i.weight}} </n-gi>
       <n-gi> <div class="orderColor" /> </n-gi>
@@ -144,6 +151,11 @@
         <n-dropdown trigger="click" :options="adminStatus">
           <n-button class="orderHighlight"> {{i.status}} </n-button>
         </n-dropdown>
+      </n-gi>
+      <n-gi> 
+        <n-button class="deleteButton"> 
+          <img src="../assets/deleteLogo.png" class="deleteButtonImg" /> 
+        </n-button>
       </n-gi>
     </n-grid>
   </div>
