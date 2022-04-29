@@ -2,7 +2,7 @@
 This is the frontend side for the Boxinator Noroff Case. Here you can login or register a new account and create new shipments, view these shipments on your own dashboard or edit your own user profile.
 
 ## Collaborators
-[Wessel Konstantinov](https://github.com/WesselKonstantinov)
+[Wessel Konstantinov](https://github.com/WesselKonstantinov) </br>
 [Timothy Blom](https://github.com/TimothyBlom)
 
 ## Project setup
